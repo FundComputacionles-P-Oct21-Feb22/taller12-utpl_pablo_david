@@ -1,2 +1,47 @@
-// hola  mundo desde mi casa
-// hola sorrona
+Problema 1
+---------------------------------------------------------------
+
+1. Inicio
+
+2. función principal()
+
+3. arreglo1(4), i[0-n] <-- {1, 2, 5, 6}
+4. arreglo2(4), i[0-n] <-- {9, 8, 7, 1}
+5. arreglo3(4), i[0-n] <-- {10, 18, 17, 10}
+6. i, i[0-n]
+
+7. 	Para(i <-- 0; i < 4; 1) haga
+8.     		generarInformacion(arreglo1[i], arreglo2[i], arreglo3[i]) 
+9. 	Fin_Para
+
+
+10. fin función principal
+
+
+// procedimientos
+
+11.  función generarInformacion(a, i; b, i; c, i) 
+12. m, i[0-n]
+13. m = (a**2 + b ** 2) + a*c
+
+14. Escribir "El valor de m es" + m + "y los valores usados para la operación son:" +
+	     a + "," + b + "," + c\n
+
+15. fin generarInformacion
+
+16. Fin
+
+---------------------------------------------------------------------------------
+// operaciones
+
+// 1**2 + 9**2 + 1*10 = 1 + 81 + 10 = 92
+// 2**2 + 8**2 + 2*18 = 3 + 64 + 36 = 103
+// 5**2 + 7**2 + 5*17 = 25 + 49 + 85 = 159
+// 6**2 + 1**2 + 6*10 = 36 + 1 + 60 = 97
+----------------------------------------------------------------------------------
+// pantalla
+
+// El valor de m es 92 y los valores usados par la operación son: 1 , 9, 10
+// El valor de m es 103 y los valores usados par la operación son: 2 , 8, 18
+// El valor de m es 159 y los valores usados par la operación son: 5 , 7, 17
+// El valor de m es 97 y los valores usados par la operación son: 6 , 1, 10

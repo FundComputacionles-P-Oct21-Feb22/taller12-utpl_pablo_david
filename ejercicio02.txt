@@ -1,0 +1,65 @@
+1.  Inicio
+2.  funcion principal()
+3.	numero, i[0-n]
+4.	mensaje, x(20)[{a-z}, {BS}]
+
+5.      Escribir "Ingrese 1 para obtener la información de un automovil, Ingrese 2 para
+		  obtener la información de una motocicleta"
+6.	Leer numero
+
+7.      Si numero == 1 Entonces
+8.		mensaje <-- informacionAutomovil() 
+9.	Caso contrario 
+10.		Si numero == 2 Entonces
+11.			mensaje <-- informacionMotocicleta()
+12.		Caso contrario
+13.		        Escribir "Numero ingresado es incorrecto"
+14.		Fin_Si
+15.	Fin_Si
+
+16.  Escribir mensaje
+17.  fin funcion principal 
+
+// Funciones 
+
+18.  funcion informacionAutomovil() : x
+19.     marca, x(20)[{a-z}, {BS}]
+20.     cadena, x(1000)[{a-z}, {BS}] <-- ""
+21.     año, i[0-n]
+22. 	salida, x(10)[{a-z}
+	
+23. 	  Haga_Hasta
+24.	      Escribir "Ingrese la marca del automovil"
+25.	      Leer marca
+26.	      Escribir "Ingrese el año de fabricación del automovil"
+27.	      Leer año
+28.           cadena <-- cadena + "Auto marca" + marca + "con año de fabricación" + año\n
+29.           Escribir "Escriba si para salir del proceso"
+30.           Leer salida
+31. 	   Fin Haga_Hasta (salida = "si") 
+
+32.     retorna cadena
+33.  fin funcion informacionAutomovil
+
+
+
+34.  funcion informacionMotocicleta() : x
+35.     motor, x(20)[{a-z}, {BS}]
+36.     cadena, x(1000)[{a-z}, {BS}] <-- ""
+37.     asientos, i[0-n]
+38. 	salida, x(10)[{a-z}
+	
+39. 	  Haga_Hasta
+40.	      Escribir "Ingrese el tipo de motor de la motocicleta"
+41.	      Leer motor
+42.	      Escribir "Ingrese el numero de asientos de la motocicleta"
+43.	      Leer asientos
+44.           cadena <-- cadena + "Moto con motor" + motor + "y" + asientos + "asientos\n"
+45.           Escribir "Escriba si para salir del proceso"
+46.           Leer salida
+47. 	   Fin Haga_Hasta (salida = "si") 
+
+48.    retorna cadena
+49.  fin funcion informacionMotocicleta
+
+50.  Fin
